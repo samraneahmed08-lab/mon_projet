@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#calculatrice {
+  display: flex;
+  height: 520px;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  background-color: rgb(143, 134, 134);
+}
+.btn {
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 1.5rem;
+  box-shadow: 2px 2px 5px grey;
+}
+#display {
+  width: 340px;
+  height: 130px;
+  font-size: 2rem;
+  padding-right: 0.5rem;
+  border: none;
+  text-align: left;
+  color: black;
+  background-color: #cbd4d5;
+}
+#numb {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+
+  justify-items: center;
+
+  background-color: rgb(204, 209, 211);
+  width: 22rem;
+  height: 30rem;
+}
+.btn:active {
+  background-color: rgb(215, 222, 226);
+  color: white;
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+.ope {
+  border-radius: 50px;
+  width: 65px;
+  height: 65px;
+  background-color: #6a6a6a;
+  border: none;
+  font-size: 1.5rem;
+  box-shadow: 2px 2px 5px grey;
+  color: white;
+}
+.eq {
+  border-radius: 50px;
+  width: 65px;
+  height: 65px;
+  background-color: #05652d;
+  border: none;
+  font-size: 1.5rem;
+  box-shadow: 2px 2px 5px grey;
+  color: white;
+}
+.eq:active {
+  background-color: #028a39;
+  color: white;
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.ope:active {
+  background-color: #4a4a4a;
+  color: white;
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
